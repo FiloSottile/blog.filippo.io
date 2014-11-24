@@ -573,6 +573,13 @@ margin on the iframe, cause it breaks stuff. */
     box-shadow: #FFF 0 0 0 5px;
 }
 
+.post-title {
+    font-family: "PT Mono", monospace;
+    text-transform: uppercase;
+    font-weight: 400;
+    word-spacing: -1.25rem;
+}
+
 .post-title a {
     text-decoration: none;
 }
