@@ -268,7 +268,7 @@ dl dt {
     text-align: right;
     text-overflow: ellipsis;
     white-space: nowrap;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 1em;
 }
 
@@ -309,7 +309,7 @@ blockquote small {
 blockquote small:before { content: "\2014 \00A0"; }
 
 blockquote cite {
-    font-weight: 700;
+    font-weight: 600;
 }
 
 blockquote cite a { font-weight: normal; }
@@ -352,6 +352,10 @@ pre code, tt {
     padding: 0;
 }
 
+b, strong {
+    font-weight: 600;
+}
+
 kbd {
     display: inline-block;
     margin-bottom: 0.4em;
@@ -360,7 +364,7 @@ kbd {
     color: #666;
     text-shadow: #FFF 0 1px 0;
     font-size: 0.9em;
-    font-weight: 700;
+    font-weight: 600;
     background: #F4F4F4;
     border-radius: 4px;
     box-shadow:
@@ -499,7 +503,7 @@ margin on the iframe, cause it breaks stuff. */
     letter-spacing: -1px;
     font-family: "PT Mono", monospace;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     word-spacing: -1.25rem;
     text-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
@@ -508,7 +512,7 @@ margin on the iframe, cause it breaks stuff. */
     margin: 0;
     font-size: 1.8rem;
     line-height: 1.6em;
-    font-weight: 400;
+    font-weight: 300;
     font-family: "Open Sans", serif;
     letter-spacing: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
@@ -576,7 +580,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-title {
     font-family: "PT Mono", monospace;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     word-spacing: -1.25rem;
 }
 
@@ -623,7 +627,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .user-name {
     display: block;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .user-bio {
@@ -643,7 +647,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .publish-heading {
     display: block;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .publish-date {
@@ -917,7 +921,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 .poweredby .icon-ghost {
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -953,7 +957,7 @@ margin on the iframe, cause it breaks stuff. */
     position: absolute;
     top: 9px;
     left: 9px;
-    font-weight: 700;
+    font-weight: 600;
     transition: color 0.5s ease;
 }
 
