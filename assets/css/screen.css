@@ -332,15 +332,15 @@ pre {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 1.7em 0;
-    border: #E3EDF3 1px solid;
     width: 100%;
     padding: 10px;
     font-family: "Droid Sans Mono", monospace, sans-serif;
-    font-size: 0.9em;
+    font-size: 0.7em;
     white-space: pre;
-    overflow: auto;
-    background: #F7FAFB;
+    background: #23241f;
+    color: #f8f8f2;
     border-radius: 3px;
+    line-height: 1.6em;
 }
 
 pre code, tt {
@@ -349,7 +349,7 @@ pre code, tt {
     white-space: pre-wrap;
     background: transparent;
     border: none;
-    padding: 0;
+    padding: 0.5em;
 }
 
 b, strong {
