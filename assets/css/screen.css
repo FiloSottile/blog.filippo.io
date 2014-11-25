@@ -340,10 +340,6 @@ pre {
     color: #f8f8f2;
     border-radius: 3px;
     line-height: 1.6em;
-
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
 }
 
 pre code, tt {
@@ -352,10 +348,19 @@ pre code, tt {
     border: none;
     padding: 0.5em;
     display: block;
+}
 
-    overflow: auto;
-    word-wrap: normal;
-    white-space: pre;
+pre {
+  display: block;
+  width: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+pre code {
+  white-space: inherit;
 }
 
 b, strong {
