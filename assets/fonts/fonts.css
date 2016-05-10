@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('Open-Sans-300/Open-Sans-300.eot');
+  src: url('Open-Sans-300/Open-Sans-300.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light'),
+       local('Open-Sans-300'),
+       url('Open-Sans-300/Open-Sans-300.woff2') format('woff2'),
+       url('Open-Sans-300/Open-Sans-300.woff') format('woff'),
+       url('Open-Sans-300/Open-Sans-300.ttf') format('truetype'),
+       url('Open-Sans-300/Open-Sans-300.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: normal;
+  src: url('Open-Sans-600/Open-Sans-600.eot');
+  src: url('Open-Sans-600/Open-Sans-600.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold'),
+       local('Open-Sans-600'),
+       url('Open-Sans-600/Open-Sans-600.woff2') format('woff2'),
+       url('Open-Sans-600/Open-Sans-600.woff') format('woff'),
+       url('Open-Sans-600/Open-Sans-600.ttf') format('truetype'),
+       url('Open-Sans-600/Open-Sans-600.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: italic;
+  src: url('Open-Sans-300italic/Open-Sans-300italic.eot');
+  src: url('Open-Sans-300italic/Open-Sans-300italic.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Light Italic'),
+       local('Open-Sans-300italic'),
+       url('Open-Sans-300italic/Open-Sans-300italic.woff2') format('woff2'),
+       url('Open-Sans-300italic/Open-Sans-300italic.woff') format('woff'),
+       url('Open-Sans-300italic/Open-Sans-300italic.ttf') format('truetype'),
+       url('Open-Sans-300italic/Open-Sans-300italic.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-style: italic;
+  src: url('Open-Sans-600italic/Open-Sans-600italic.eot');
+  src: url('Open-Sans-600italic/Open-Sans-600italic.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans Semibold Italic'),
+       local('Open-Sans-600italic'),
+       url('Open-Sans-600italic/Open-Sans-600italic.woff2') format('woff2'),
+       url('Open-Sans-600italic/Open-Sans-600italic.woff') format('woff'),
+       url('Open-Sans-600italic/Open-Sans-600italic.ttf') format('truetype'),
+       url('Open-Sans-600italic/Open-Sans-600italic.svg#OpenSans') format('svg');
+}
+
+@font-face {
+  font-family: 'PT Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('PT-Mono-regular/PT-Mono-regular.eot');
+  src: url('PT-Mono-regular/PT-Mono-regular.eot?#iefix') format('embedded-opentype'),
+       local('PT Mono'),
+       local('PT-Mono-regular'),
+       url('PT-Mono-regular/PT-Mono-regular.woff2') format('woff2'),
+       url('PT-Mono-regular/PT-Mono-regular.woff') format('woff'),
+       url('PT-Mono-regular/PT-Mono-regular.ttf') format('truetype'),
+       url('PT-Mono-regular/PT-Mono-regular.svg#PTMono') format('svg');
+}
+
+@font-face {
+  font-family: 'Droid Sans Mono';
+  font-weight: 400;
+  font-style: normal;
+  src: url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.eot');
+  src: url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.eot?#iefix') format('embedded-opentype'),
+       local('Droid Sans Mono'),
+       local('Droid-Sans-Mono-regular'),
+       url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.woff2') format('woff2'),
+       url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.woff') format('woff'),
+       url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.ttf') format('truetype'),
+       url('Droid-Sans-Mono-regular/Droid-Sans-Mono-regular.svg#DroidSansMono') format('svg');
+}
