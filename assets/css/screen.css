@@ -767,6 +767,10 @@ margin on the iframe, cause it breaks stuff. */
     margin-right: 180px;
 }
 
+.author .rc-scout__logo {
+    height: 1em;
+}
+
 /* Drop the share links in the space to the right.
    Doing it like this means it's easier for the author bio
    to be flexible at smaller screen sizes while the share
