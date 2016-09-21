@@ -348,6 +348,8 @@ pre code, tt {
     border: none;
     padding: 0.5em;
     display: block;
+    white-space: pre;
+    overflow-x: scroll;
 }
 
 b, strong {
