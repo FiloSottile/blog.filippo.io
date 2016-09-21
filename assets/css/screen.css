@@ -349,7 +349,8 @@ pre code, tt {
     padding: 0.5em;
     display: block;
     white-space: pre;
-    overflow-x: scroll;
+    overflow-x: auto;
+    word-break: normal;
 }
 
 b, strong {
