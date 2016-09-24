@@ -614,6 +614,31 @@ margin on the iframe, cause it breaks stuff. */
     text-decoration: underline;
 }
 
+.post:nth-child(n+3) section.post-excerpt {
+    display: none;
+}
+
+.post:nth-child(n+3) {
+    padding-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post:nth-child(n+3) .post-title {
+    font-size: 25px;
+    word-spacing: -0.5rem;
+}
+
+.post:nth-child(2) {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 500px)
+h2 {
+    word-spacing: -0.5rem;
+    letter-spacing: -0.1rem;
+}
+
 .user-meta {
     position: relative;
     padding: 0.3rem 40px 0 100px;
