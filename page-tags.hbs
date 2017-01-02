@@ -1,0 +1,45 @@
+{{!< default}}
+
+<main class="content" role="main">
+
+    <article class="{{post_class}}">
+
+        <header class="post-header">
+            <a class="blog-logo" href="/">
+                {{#if @blog.logo}}
+                    <img src="{{@blog.logo}}" alt="Blog Logo" />
+                {{else}}
+                    <span class="blog-title">{{@blog.title}}</span>
+                {{/if}}
+            </a>
+        </header>
+
+        {{#post}}
+
+            <h1 class="post-title">{{{title}}}</h1>
+
+            <section class="post-content">
+                {{content}}
+            </section>
+            
+            {{#foreach tags}}
+
+                <section class="tag">
+                    <header class="tag-header">
+                        <h2>
+                            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
+                            <a class="icon-feed" style="text-decoration: none;" href="{{url}}/rss/"></a>
+                        </h2>
+                    </header>
+                    <section class="tag-excerpt">
+                        <p>{{description}}</p>
+                    </section>
+                </section>
+
+            {{/foreach}}
+
+        {{/post}}
+
+    </article>
+
+</main>
