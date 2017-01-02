@@ -22,9 +22,11 @@
                 {{content}}
             
                 {{#foreach tags}}
-                    <h2><a href="{{url}}">{{name}}</a></h2>
-                    <p>{{description}}</p>
-                    <p>RSS feed: <a class="icon-feed" style="text-decoration: none;" href="{{url}}/rss/"></a></p>
+                    <h3><a href="{{url}}" style="text-decoration: none;">{{name}}</a></h3>
+                    <p>
+                        {{description}}
+                        <a class="icon-feed" style="text-decoration: none;" href="{{url}}/rss/"></a>
+                    </p>
                 {{/foreach}}
             </section>
 
