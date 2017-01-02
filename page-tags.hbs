@@ -20,23 +20,13 @@
 
             <section class="post-content">
                 {{content}}
-            </section>
             
-            {{#foreach tags}}
-
-                <article class="{{post_class}}">
-                    <header class="post-header">
-                        <h2 class="post-title">
-                            <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
-                            <a class="icon-feed" style="text-decoration: none;" href="{{url}}/rss/"></a>
-                        </h2>
-                    </header>
-                    <section class="post-excerpt">
-                        <p>{{description}}</p>
-                    </section>
-                </article>
-
-            {{/foreach}}
+                {{#foreach tags}}
+                    <h2><a href="{{url}}">{{name}}</a></h2>
+                    <p>{{description}}</p>
+                    <p>RSS feed: <a class="icon-feed" style="text-decoration: none;" href="{{url}}/rss/"></a></p>
+                {{/foreach}}
+            </section>
 
         {{/post}}
 
