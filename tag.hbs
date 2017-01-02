@@ -19,10 +19,8 @@
 
     <header class="tag-archive-header">
         <h1>{{tag.name}}</h1>
-	<p>
-		{{tag.description}} 
-		<a class="icon-feed" href="{{tag.url}}/rss/"><span class="tooltip">Subscribe to the tag</span></a>
-	</p>
+	<p>{{tag.description}}</p>
+	<div><a class="icon-feed" style="text-decoration: none;" href="rss/"></a></div>
     </header>
 
     {{! Each post will be output using this markup }}
