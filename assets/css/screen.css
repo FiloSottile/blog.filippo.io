@@ -583,6 +583,7 @@ margin on the iframe, cause it breaks stuff. */
     text-transform: uppercase;
     font-weight: 300;
     word-spacing: -1.25rem;
+    hyphens: none;
 }
 
 .post-title a {
