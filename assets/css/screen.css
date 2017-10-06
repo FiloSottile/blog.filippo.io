@@ -158,6 +158,12 @@ table { border-collapse: collapse; border-spacing: 0; }
    2. General - Setting up some base styles
    ========================================================================== */
 
+@font-face {
+	font-family: "STIX Two Math";
+	src: url("../fonts/STIX2Math.otf") format("opentype");
+	unicode-range: U+1D400-1D7FF, U+00D7;
+}
+
 html {
     height: 100%;
     max-height: 100%;
@@ -172,7 +178,7 @@ body {
     font-feature-settings: 'kern' 1;
     height: 100%;
     max-height: 100%;
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif, "STIX Two Math";
     font-size: 2.2rem;
     line-height: 1.7em;
     color: #3A4145;
@@ -196,7 +202,7 @@ h4, h5, h6 {
     color: #2E2E2E;
     line-height: 1.3em;
     margin: 0 0 0.5em 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif, "STIX Two Math";
 }
 
 h1 {
@@ -514,7 +520,7 @@ margin on the iframe, cause it breaks stuff. */
     font-size: 1.8rem;
     line-height: 1.6em;
     font-weight: 300;
-    font-family: "Open Sans", serif;
+    font-family: "Open Sans", serif, "STIX Two Math";
     letter-spacing: 0;
     text-shadow: 0 1px 3px rgba(0,0,0,0.15);
 }
@@ -601,7 +607,7 @@ margin on the iframe, cause it breaks stuff. */
 .post-meta {
     display: inline-block;
     margin: 0 0 5px 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif, "STIX Two Math";
     font-size: 1.5rem;
     color: #9EABB3;
 }
@@ -883,7 +889,7 @@ h2 {
     width: 80%;
     max-width: 780px;
     margin: 4rem auto;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif, "STIX Two Math";
     font-size: 1.3rem;
     color: #9EABB3;
     text-align: center;
@@ -934,7 +940,7 @@ h2 {
     margin: 8rem 0 0 0;
     padding: 4rem 0;
     border-top: #EBF2F6 1px solid;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif, "STIX Two Math";
     font-size: 1.3rem;
     line-height: 1.7em;
     color: #BBC7CC;
