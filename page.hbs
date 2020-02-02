@@ -9,21 +9,21 @@
 
         <header class="post-header">
             <a class="blog-logo" href="/">
-                {{#if @blog.logo}}
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
+                {{#if @site.logo}}
+                <img src="{{@site.logo}}" alt="Blog Logo" />
                 {{else}}
-                    <span class="blog-title">{{@blog.title}}</span>
+                <span class="blog-title">{{@site.title}}</span>
                 {{/if}}
             </a>
         </header>
 
         {{#post}}
 
-            <h1 class="post-title">{{{title}}}</h1>
+        <h1 class="post-title">{{{title}}}</h1>
 
-            <section class="post-content">
-                {{content}}
-            </section>
+        <section class="post-content">
+            {{content}}
+        </section>
 
         {{/post}}
 

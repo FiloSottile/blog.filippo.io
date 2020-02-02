@@ -10,10 +10,10 @@
         {{! Each post has the blog logo at the top, with a link back to the home page }}
         <header class="post-header">
             <a class="blog-logo" href="/">
-                {{#if @blog.logo}}
-                    <img src="{{@blog.logo}}" alt="Blog Logo" />
+                {{#if @site.logo}}
+                <img src="{{@site.logo}}" alt="Blog Logo" />
                 {{else}}
-                    <span class="blog-title">{{@blog.title}}</span>
+                <span class="blog-title">{{@site.title}}</span>
                 {{/if}}
             </a>
         </header>
@@ -21,36 +21,43 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
-            <span class="post-meta">{{author}}, <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="on " separator=" | "}}</span>
+        <span class="post-meta">{{authors}}, <time
+                datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+            {{tags prefix="on " separator=" | "}}</span>
 
-            <h1 class="post-title">{{{title}}}</h1>
+        <h1 class="post-title">{{{title}}}</h1>
 
-            <section class="post-content">
-                {{content}}
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer">
+
+            {{#primary_author}}
+            <section class="author">
+                <h4><a href="{{url}}">{{name}}</a></h4>
+                {{#if bio}}
+                <p>{{bio}}</p>
+                {{else}}
+                <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+                {{/if}}
+                <div class="author-meta">
+                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                    {{#if website}}<span class="author-link icon-link"><a
+                            href="{{website}}">{{website}}</a></span>{{/if}}
+                </div>
+                <div class="rc-scout"></div>
+                <script async defer
+                    src="https://www.recurse-scout.com/loader.js?t=e2e278036cc95428674cb2f247dfbc01"></script>
+                <p>Sign up to my newsletter—<a href="https://buttondown.email/cryptography-dispatches">Cryptography
+                        Dispatches</a>—for more frequent, lightly edited writings on cryptography.</p>
+                <iframe scrolling="no"
+                    style="width:100%!important;height:220px;border:1px #ccc solid !important;margin:0"
+                    src="https://buttondown.email/cryptography-dispatches?as_embed=true"></iframe>
             </section>
+            {{/primary_author}}
 
-            <footer class="post-footer">
-                
-                {{#author}}
-                <section class="author">
-                    <h4><a href="{{url}}">{{name}}</a></h4>
-                    {{#if bio}}
-                        <p>{{bio}}</p>
-                    {{else}}
-                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                    {{/if}}
-                    <div class="author-meta">
-                        {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                        {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                    </div>
-                    <div class="rc-scout"></div>
-                    <script async defer src="https://www.recurse-scout.com/loader.js?t=e2e278036cc95428674cb2f247dfbc01"></script>
-                    <p>Sign up to my newsletter—<a href="https://buttondown.email/cryptography-dispatches">Cryptography Dispatches</a>—for more frequent, lightly edited writings on cryptography.</p>
-                    <iframe scrolling="no" style="width:100%!important;height:220px;border:1px #ccc solid !important;margin:0" src="https://buttondown.email/cryptography-dispatches?as_embed=true"></iframe>
-                </section>
-                {{/author}}
-
-            </footer>
+        </footer>
 
         {{/post}}
 
