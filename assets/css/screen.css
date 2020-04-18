@@ -728,7 +728,11 @@ h2 {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 0.6em 0;
+    max-height: 500px;
+}
+
+.post-content figure {
+    margin: 0 0 1.65em 0;
 }
 
 /* Break out larger images to be wider than the main text column
