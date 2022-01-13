@@ -1,60 +1,135 @@
 {{!< default}}
 
-{{! The comment above "< default" means - insert everything in this file into
-    the {body} of the default.hbs template, which contains our header/footer. }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
+
+<style>
+    body {
+      color: #3A4145;
+      font-family: "Raleway", serif;
+      font-size: 1.2em;
+      line-height: 1.7em;
+      overflow-wrap: break-word;
+      margin: 0;
+    }
+
+    p,
+    ul,
+    ol,
+    dl,
+    figure {
+      margin: 0 0 1.65em 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #2E2E2E;
+      font-family: "Bitter", sans-serif;
+      line-height: 1.3em;
+      margin: 0 0 0.4em 0;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+
+    article {
+      position: relative;
+      width: 80%;
+      max-width: 780px;
+      margin: 4rem auto;
+      padding-bottom: 4rem;
+    }
+
+    a {
+      color: #4A4A4A;
+      transition: color ease 0.3s;
+      background: transparent;
+    }
+
+    code {
+      font-family: "Source Code Pro", monospace;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    b,
+    strong {
+      font-weight: 600;
+    }
+
+    article img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+      max-height: 500px;
+    }
+
+    header {
+      margin: 80px auto;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    header a {
+      text-decoration: none;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    @media only screen and (max-width: 500px) {
+      body {
+        font-size: initial;
+      }
+
+      header {
+        font-size: 1.7em;
+      }
+
+      article {
+        width: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      h1 {
+        font-size: 1.7em;
+      }
+    }
+</style>
 
 <main class="content" role="main">
 
     <article class="{{post_class}}">
 
-        {{! Each post has the blog logo at the top, with a link back to the home page }}
-        <header class="post-header">
-            <a class="blog-logo" href="https://filippo.io/">
-                <span class="blog-title">{{@site.title}}</span>
-            </a>
-        </header>
+        <header><a href="https://filippo.io">
+          Filippo Valsorda
+        </a></header>
 
-        {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
-        <span class="post-meta">{{authors}}, <time
-                datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
-            {{tags prefix="on " separator=" | "}}</span>
+        <span class="post-meta">
+            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+        </span>
 
         <h1 class="post-title">{{{title}}}</h1>
 
         <section class="post-content">
             {{content}}
         </section>
-
-        <footer class="post-footer">
-
-            {{#primary_author}}
-            <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
-                {{#if bio}}
-                <p>{{bio}}</p>
-                {{else}}
-                <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a
-                            href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-                <div class="rc-scout"></div>
-                <script async defer
-                    src="https://www.recurse-scout.com/loader.js?t=e2e278036cc95428674cb2f247dfbc01"></script>
-                <p>Sign up to my newsletter—<a
-                        href="https://buttondown.email/cryptography-dispatches?tag=blog">Cryptography
-                        Dispatches</a>—for more frequent, lightly edited writings on cryptography.</p>
-                <iframe scrolling="no"
-                    style="width:100%!important;height:220px;border:1px #ccc solid !important;margin:0"
-                    src="https://buttondown.email/cryptography-dispatches?tag=blog&as_embed=true"></iframe>
-            </section>
-            {{/primary_author}}
-
-        </footer>
 
         {{/post}}
 
