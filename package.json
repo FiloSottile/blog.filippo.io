@@ -5,6 +5,10 @@
     "name": "Filippo Valsorda",
     "email": "noreply@example.com"
   },
+  "keywords": ["ghost-theme"],
+  "engines": {
+    "ghost-api": "v4"
+  },
   "config": {
     "posts_per_page": 1000
   }
