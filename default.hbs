@@ -5,14 +5,12 @@
     <title>{{meta_title}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-    {{#is "post, index, author, tag"}}
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro&display=swap"> 
-    <link rel="stylesheet" href="{{asset "css/new.css"}}">
-    {{else}}
+    {{#is "page"}}
     <link rel="stylesheet" href="{{asset "css/screen.css"}}">
     <link rel="stylesheet" href="{{asset "fonts/fonts.css"}}">
+    {{else}}
+    <link rel="stylesheet" href="{{asset "css/new.css"}}">
+    <link rel="stylesheet" href="{{asset "fonts/new.css"}}">
     {{/is}}
 
     {{ghost_head}}
