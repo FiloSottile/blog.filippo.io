@@ -1,0 +1,134 @@
+body {
+  color: #3a4145;
+  font-family: "Raleway", serif;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+
+p,
+ul,
+ol,
+dl,
+figure,
+pre {
+  margin: 0 0 1.65em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2e2e2e;
+  font-family: "Bitter", sans-serif;
+  line-height: 1.3em;
+  margin: 0 0 0.4em 0;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+main {
+  position: relative;
+  width: 80%;
+  max-width: 780px;
+  margin: 4rem auto;
+  padding-bottom: 4rem;
+}
+
+a {
+  color: #4a4a4a;
+  transition: color ease 0.3s;
+  background: transparent;
+}
+
+code,
+pre {
+  font-family: "Source Code Pro", monospace;
+  -webkit-font-smoothing: antialiased;
+}
+
+pre {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  background: #23241f;
+  color: #f8f8f2;
+  overflow-x: auto;
+}
+
+pre code {
+  font-size: 0.8em;
+  line-height: 1.6em;
+  display: block;
+}
+
+b,
+strong {
+  font-weight: 600;
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin: 0 auto;
+  max-height: 500px;
+}
+
+header {
+  margin: 80px auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+header a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.index h1 {
+  font-size: 1.5em;
+}
+
+.index h1 a {
+  text-decoration: none;
+}
+
+.index article {
+  font-size: 0.8em;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: initial;
+  }
+
+  header {
+    font-size: 1.7em;
+  }
+
+  main {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  ul {
+    padding-left: 20px;
+  }
+
+  h1 {
+    font-size: 1.7em;
+  }
+}

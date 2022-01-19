@@ -4,5 +4,8 @@
   "author": {
     "name": "Filippo Valsorda",
     "email": "noreply@example.com"
+  },
+  "config": {
+    "posts_per_page": 1000
   }
 }

@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html>
 
 <head>
-    {{! Document Settings }}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    {{! Page Meta }}
+    <meta charset="utf-8">
     <title>{{meta_title}}</title>
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-
-    {{^is "post"}}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="{{asset "fonts/fonts.css"}}" />
+    {{^is "post, index"}}
+    <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+    <link rel="stylesheet" href="{{asset "fonts/fonts.css"}}">
+    {{/is}}
+    {{is "post, index"}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro&display=swap"> 
+    <link rel="stylesheet" href="{{asset "css/new.css"}}">
     {{/is}}
 
-    {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
 </head>
 
 <body class="{{body_class}}">
-
-    {{! Everything else gets inserted here }}
     {{{body}}}
 
-    {{! Ghost outputs important scripts and data with this tag }}
     {{ghost_foot}}
-
 </body>
 
-</html>

@@ -1,155 +1,19 @@
 {{!< default}}
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500;600&family=Raleway:ital,wght@0,400;0,600;1,400;1,600&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
-
-<style>
-    body {
-      color: #3A4145;
-      font-family: "Raleway", serif;
-      font-size: 1.2em;
-      line-height: 1.7em;
-      overflow-wrap: break-word;
-      margin: 0;
-    }
-
-    p,
-    ul,
-    ol,
-    dl,
-    figure,
-    pre {
-      margin: 0 0 1.65em 0;
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      color: #2E2E2E;
-      font-family: "Bitter", sans-serif;
-      line-height: 1.3em;
-      margin: 0 0 0.4em 0;
-      font-weight: 600;
-      font-size: 1.5em;
-    }
-
-    article {
-      position: relative;
-      width: 80%;
-      max-width: 780px;
-      margin: 4rem auto;
-      padding-bottom: 4rem;
-    }
-
-    a {
-      color: #4A4A4A;
-      transition: color ease 0.3s;
-      background: transparent;
-    }
-
-    code, pre {
-      font-family: "Source Code Pro", monospace;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    pre {
-      width: 100%;
-      padding: 1em;
-      box-sizing: border-box;
-      background: #23241f;
-      color: #f8f8f2;
-      overflow-x: auto;
-    }
-
-    pre code {
-      font-size: 0.8em;
-      line-height: 1.6em;
-      display: block;
-    }
-
-    b,
-    strong {
-      font-weight: 600;
-    }
-
-    article img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      width: auto;
-      margin: 0 auto;
-      max-height: 500px;
-    }
-
-    header {
-      margin: 80px auto;
-      text-align: center;
-      font-size: 2em;
-    }
-
-    header a {
-      text-decoration: none;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      text-transform: uppercase;
-      font-weight: 500;
-    }
-
-    @media only screen and (max-width: 500px) {
-      body {
-        font-size: initial;
-      }
-
-      header {
-        font-size: 1.7em;
-      }
-
-      article {
-        width: auto;
-        margin-left: 16px;
-        margin-right: 16px;
-        padding-bottom: 0;
-        margin-bottom: 0;
-      }
-
-      ul {
-        padding-left: 20px;
-      }
-
-      h1 {
-        font-size: 1.7em;
-      }
-    }
-</style>
-
-<main class="content" role="main">
-
+<main>
     <header><a href="https://filippo.io">
       Filippo Valsorda
     </a></header>
 
+    {{#post}}
     <article class="{{post_class}}">
-
-        {{#post}}
-
         <span class="post-meta">
-            <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time>
+            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
         </span>
-
-        <h1 class="post-title">{{{title}}}</h1>
-
+        <h1 class="post-title">{{title}}</h1>
         <section class="post-content">
             {{content}}
         </section>
-
-        {{/post}}
-
     </article>
-
+    {{/post}}
 </main>
