@@ -1,7 +1,13 @@
 {{!< default}}
 
 <style>
-main { counter-reset: issue {{#get "posts"}}{{pagination.total}}{{/get}}; }
+main {
+    counter-reset: issue {{#get "posts" filter="primary_tag:dispatches"}}{{pagination.total}}{{/get}};
+}
+.tag-dispatches .post-meta::after {
+    counter-increment: issue -1;
+    content: "— Cryptography Dispatches #" counter(issue);
+}
 </style>
 
 <header><a href="https://filippo.io">
