@@ -39,9 +39,7 @@ main {
 }
 
 a {
-  color: #4a4a4a;
-  transition: color ease 0.3s;
-  background: transparent;
+  color: inherit;
 }
 
 code,
@@ -95,6 +93,12 @@ h1 {
   font-weight: 500;
 }
 
+blockquote {
+  border-left: 2px solid #3a4145;
+  margin-left: 25px;
+  padding-left: 15px;
+}
+
 .index h1 {
   font-size: 1.5em;
 }
@@ -110,6 +114,14 @@ h1 {
 .twitter-tweet {
   margin-left: auto;
   margin-right: auto;
+}
+
+.dispatches-cta {
+  font-style: italic;
+}
+
+.dispatches-cta form {
+  text-align: center;
 }
 
 @media only screen and (max-width: 500px) {

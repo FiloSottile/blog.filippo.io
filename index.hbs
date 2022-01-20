@@ -1,10 +1,14 @@
 {{!< default}}
 
-<main class="index">
-    <header><a href="https://filippo.io">
-      Filippo Valsorda
-    </a></header>
+<style>
+main { counter-reset: issue {{#get "posts"}}{{pagination.total}}{{/get}}; }
+</style>
 
+<header><a href="https://filippo.io">
+    Filippo Valsorda
+</a></header>
+
+<main class="index">
     {{#foreach posts}}
     <article class="{{post_class}}">
         <span class="post-meta">

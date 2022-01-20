@@ -1,10 +1,10 @@
 {{!< default}}
 
-<main>
-    <header><a href="https://filippo.io">
-      Filippo Valsorda
-    </a></header>
+<header><a href="https://filippo.io">
+    Filippo Valsorda
+</a></header>
 
+<main>
     {{#post}}
     <article class="{{post_class}}">
         {{^is "page"}}
@@ -13,6 +13,16 @@
         </span>
         {{/is}}
         <h1 class="post-title">{{title}}</h1>
+        {{#has tag="dispatches"}}
+        <aside class="dispatches-cta">
+            <p>This is an issue of Cryptography Dispatches, my lightly edited newsletter on cryptography engineering.</p>
+            <p><form action="https://buttondown.email/api/emails/embed-subscribe/cryptography-dispatches" method="post" target="popupwindow">
+                <input type="email" name="email" placeholder="Email address">
+                <input type="submit" value="Subscribe">
+                <input type="hidden" name="tag" value="blog">
+            </form></p>
+        </aside>
+        {{/has}}
         <section class="post-content">
             {{content}}
         </section>
