@@ -2,7 +2,7 @@
 
 <style>
 main {
-    counter-reset: issue {{#get "posts" filter="primary_tag:dispatches"}}{{pagination.total}}{{/get}};
+    counter-reset: issue calc(1 + {{#get "posts" filter="primary_tag:dispatches"}}{{pagination.total}}{{/get}});
 }
 .tag-dispatches .post-meta::after {
     counter-increment: issue -1;
