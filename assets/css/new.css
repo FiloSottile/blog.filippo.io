@@ -120,10 +120,6 @@ blockquote {
   font-style: italic;
 }
 
-.dispatches-cta form {
-  text-align: center;
-}
-
 @media only screen and (max-width: 500px) {
   body {
     font-size: initial;
