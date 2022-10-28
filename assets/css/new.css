@@ -144,6 +144,46 @@ blockquote {
   }
 }
 
+.footer-cta input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 0.5rem;
+  border: black solid 1px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.footer-cta button {
+  border: 0;
+  border-radius: 0.25rem;
+  background: black;
+  color: white;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 0.75rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-cta .almost-done {
+  display: none;
+}
+
+.footer-cta.success .almost-done {
+  display: initial;
+}
+
+.footer-cta.success button, .footer-cta.success input {
+  display: none;
+}
+
 .kg-width-wide {}
 .kg-width-full {}
 .kg-gallery-container {}
