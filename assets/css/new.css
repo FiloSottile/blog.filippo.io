@@ -145,11 +145,11 @@ blockquote {
 }
 
 .subscribe-cta {
+  text-align: center;
   margin-bottom: 1.65em;
 }
 
 .subscribe-cta div {
-  text-align: center;
   margin-bottom: 1rem;
   font-weight: bold;
 }
@@ -170,6 +170,15 @@ blockquote {
   color: white;
   cursor: pointer;
   margin-top: 0.5rem;
+}
+
+@media only screen and (min-width: 500px) {
+  .subscribe-cta input {
+    width: 70%;
+  }
+  .subscribe-cta button {
+    width: 28%;
+  }
 }
 
 .subscribe-cta.success div::after {
