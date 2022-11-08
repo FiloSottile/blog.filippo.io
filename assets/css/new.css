@@ -182,12 +182,12 @@ blockquote {
   box-sizing: border-box;
 }
 
-.subscribe-cta .almost-done {
-  display: none;
-}
-
-.subscribe-cta.success .almost-done {
-  display: initial;
+.subscribe-cta.success div::after {
+  content: "Thank you! You're almost done, click the link in your inbox to confirm your email.";
+  display: block;
+  text-align: initial;
+  font-weight: initial;
+  margin: 1.65em 0;
 }
 .subscribe-cta.success button, .subscribe-cta.success input {
   display: none;
