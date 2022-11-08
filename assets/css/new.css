@@ -154,32 +154,22 @@ blockquote {
   font-weight: bold;
 }
 
-.subscribe-cta input {
-  width: 100%;
+.subscribe-cta input, .subscribe-cta button {
   padding: 0.75rem;
   font-size: 1rem;
   font-family: inherit;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   border: black solid 1px;
   box-sizing: border-box;
+  width: 100%;
   text-align: center;
 }
 
 .subscribe-cta button {
-  border: 0;
-  border-radius: 0.25rem;
   background: black;
   color: white;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.2;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 0.75rem;
   cursor: pointer;
-  margin-top: 1rem;
-  width: 100%;
-  box-sizing: border-box;
+  margin-top: 0.5rem;
 }
 
 .subscribe-cta.success div::after {
