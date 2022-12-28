@@ -193,6 +193,36 @@ blockquote {
   display: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f0f0f0;
+    background-color: #1f1f1f;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white;
+  }
+  
+  pre {
+    color: #1f1f1f;
+    background-color: #f0f0f0;
+  }
+  
+  blockquote {
+    border-left-color: #f0f0f0;
+  }
+
+  .subscribe-cta button {
+    background-color: white;
+    color: #1f1f1f;
+  }
+}
+
 .kg-width-wide {}
 .kg-width-full {}
 .kg-gallery-container {}
