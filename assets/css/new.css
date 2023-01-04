@@ -89,7 +89,7 @@ h1 {
   font-size: 2.5em;
   text-transform: uppercase;
   font-weight: 500;
-  margin-bottom: 1.65em;
+  margin-bottom: 1em;
 }
 
 blockquote {
@@ -100,7 +100,6 @@ blockquote {
 
 .index h1 {
   font-size: 1.5em;
-  margin-bottom: 1em;
 }
 
 .index h1 a {
