@@ -44,7 +44,7 @@
         const h2first = document.querySelector(".post-content > h2:first-of-type")
         h2first.parentElement.insertBefore(document.getElementsByClassName("subscribe-cta")[0].cloneNode(true), h2first)
         const h2last = document.querySelector("h2#the-picture")
-        if (h2last) h2last.parentElement.insertBefore(document.getElementsByClassName("subscribe-cta")[0].cloneNode(true), h2last)
+        if (h2last && h2last != h2first) h2last.parentElement.insertBefore(document.getElementsByClassName("subscribe-cta")[0].cloneNode(true), h2last)
     </script>
     {{/post}}
 </main>
