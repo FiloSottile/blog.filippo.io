@@ -25,7 +25,6 @@ h6 {
   color: #2e2e2e;
   font-family: "Libre Bodoni", sans-serif;
   font-variant: small-caps;
-  font-weight: normal;
   letter-spacing: .04em;
   line-height: 1.3em;
   margin: 0 0 0.4em 0;
@@ -94,6 +93,8 @@ header img {
 
 h1 {
   font-size: 2.2em;
+  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 1em;
 }
 
