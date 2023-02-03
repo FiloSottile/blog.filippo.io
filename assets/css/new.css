@@ -76,13 +76,17 @@ article img {
 }
 
 header {
-  margin: 80px auto;
-  text-align: center;
-  font-size: 2em;
+  margin: 4rem auto 0;
 }
 
-header a {
-  text-decoration: none;
+header div {
+  max-width: 350px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header img {
+  max-width: 100%;
 }
 
 h1 {
@@ -125,7 +129,7 @@ blockquote {
   }
 
   header {
-    font-size: 1.7em;
+    margin: 35px 0;
   }
 
   main {
