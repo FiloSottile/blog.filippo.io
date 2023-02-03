@@ -23,9 +23,7 @@ h4,
 h5,
 h6 {
   color: #2e2e2e;
-  font-family: "Libre Bodoni", sans-serif;
-  font-variant: small-caps;
-  letter-spacing: .04em;
+  font-family: "Bitter", sans-serif;
   line-height: 1.3em;
   margin: 0 0 0.4em 0;
 }
