@@ -15,26 +15,6 @@
         </span>
         {{/is}}
         <h1 class="post-title">{{title}}</h1>
-        {{#has tag="dispatches"}}
-        <aside class="dispatches-cta">
-            <p>
-                This is an issue of
-                {{#has tag="maintainer"}}
-                Maintainer Dispatches,
-                {{else}}
-                Cryptography Dispatches,
-                {{/has}}
-                my lightly edited newsletter on 
-                {{#has tag="maintainer"}}
-                professional Open Source maintenance.
-                {{else}}
-                cryptography engineering.
-                {{/has}}
-                <a href="#/portal/signup">Subscribe via email</a> or
-                <a href="https://words.filippo.io/dispatches/rss/">RSS</a>.
-            </p>
-        </aside>
-        {{/has}}
         <section class="post-content">
             {{content}}
         </section>

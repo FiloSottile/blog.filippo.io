@@ -119,10 +119,6 @@ blockquote {
   margin-right: auto;
 }
 
-.dispatches-cta {
-  font-style: italic;
-}
-
 @media only screen and (max-width: 500px) {
   body {
     font-size: initial;
